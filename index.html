@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo App</title>
+</head>
+<body>
+
+  <div id="single-task-modal" class="single-task-modal">
+    <div class="imgcontainer">
+      
+   <button class="button" onclick="TogglesingleTaskModal()"> <img  class="image" src="./back.svg" alt="">Back</button>
+   <p id="single-task-name"></p>
+   <button class="button" ><img  class="image" src="./add_btn.svg"></button>
+
+    </div>
+    <div class="centre">
+    <div id="NAME" class="NAME"></div>
+  </div>
+  </div>
+
+
+
+    <div id="task-modal" class="task-modal">
+        <div class="box">
+          <h2>Add New List</h2>
+          <input type="text" id="task-input" placeholder="Add New List" class="newlistinput"/>
+          <div class="side">
+          <input type="button" value="Add" id="task-submit"  class="newlistbtns" onclick="addTask()"  />
+          <input
+            type="button"
+            value="Close"
+            id="modal-close"
+            onclick="ToggleTaskModal()"
+            class="newlistbtns"
+          />
+        </div>
+        </div>
+      </div>
+
+
+      <div id="item-modal" class="item-modal" >
+        <div class="box">
+          <h2>Add New Item</h2>
+          <input type="text" id="item-input" placeholder="Enter the item Name" class="newlistinput">
+          <div class="side">
+          <input type="button" value="Add" id="item-submit" class="newlistbtns" onclick="addItem() " >
+          <input type="button" value="Close" id="modal-close"  class="newlistbtns" onclick="ToggleItemModal()">
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="app-container">
+        <div class="topBar">
+          <h1 style="color: white;"> <span style="font-weight: bold;"> Tasks</span>
+           <span style="font-weight: 2;">List</span> 
+            </h1>
+          <p id="add-option" class="add-option" style="color: white; font-size: 20px;" >
+            <img src="./plusecircle.svg" width="30px" style="margin-right: 10px;" /> 
+            Add Item
+          </p>
+        </div>
+  
+        <div id="taskContainer" class="taskContainer">
+    
+          <!-- All Task items will rendered inside this div  -->
+        </div>
+      </div>
+</body>
+<script src="./script.js"> </script>
+
+</html>
