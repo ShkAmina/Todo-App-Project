@@ -24,7 +24,7 @@ body {
   
   .topBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
   }
   .single-task-modal {
@@ -73,6 +73,7 @@ body {
     justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
+   
   }
   
   .taskCard {
@@ -83,6 +84,7 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    border-radius:10px;
   }
   
   .taskTitle {
