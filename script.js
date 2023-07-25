@@ -10,6 +10,7 @@ renderItems();
 function ToggleTaskModal() {
   const taskInput = document.getElementById("task-input");
   taskInput.value = "";
+  document.getElementById('listText').style.display= 'none';
   const modal = document.getElementById("task-modal");
   if (modal.style.display === "block") {
     modal.style.display = "none";
