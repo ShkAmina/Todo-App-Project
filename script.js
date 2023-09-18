@@ -98,8 +98,10 @@ function renderItems() {
       ToggleSingleTaskModal();
       singleTaskIndex=taskTitle.parentElement.id
       document.getElementById('single-task-name').innerText=Todos[singleTaskIndex].name;
+      
       // document.getElementById('NAME').innerHTML=taskCard.innerHTML;
       // ToggleItemModal();
+
       singlerenderItems();
       renderItems();
       console.log("Index :", singleTaskIndex);
